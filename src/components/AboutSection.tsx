@@ -39,6 +39,8 @@ const AboutSection = () => {
           ))}
         </div>
       </div>
+
+      {/* About section image */}
       <img
         className="h-150 rounded-3xl"
         src="./images/tabletimage.png"
