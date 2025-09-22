@@ -29,7 +29,7 @@ const HeroSection = () => {
           />
 
           {/* button */}
-          <ContactButton className="border-white border font-medium bg-transparent" />
+          <ContactButton className="border-white border font-medium h-13 pr-6 pl-6 text-white bg-transparent" />
         </div>
 
         {/* Service cards */}

@@ -10,6 +10,7 @@ export type NavLinksData={
 
 export type ButtonClass={
     className?:string
+    name?:string,
 }
 
 

@@ -26,7 +26,7 @@ const NavBar = () => {
       {/* Contact Button */}
 
       <div className="hidden lg:block lg:shrink-0">
-        <ContactButton />
+        <ContactButton className="text-white h-13 pr-6 pl-6" />
       </div>
 
       {/* Menu icon for mubl */}
