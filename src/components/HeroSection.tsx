@@ -33,7 +33,7 @@ const HeroSection = () => {
         </div>
 
         {/* Service cards */}
-        <div className="flex gap-3 justify-center flex-col lg:flex-row items-center">
+        <div className="flex gap-6 justify-center flex-col lg:flex-row items-center">
           {ServiceCardData.map(({ heading, para }: ServicesData) => (
             <ServiceComponet heading={heading} para={para} />
           ))}

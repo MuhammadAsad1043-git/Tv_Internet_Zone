@@ -43,3 +43,9 @@ export type AboutSectionData={
 export type AboutSectionServies={
     para:string,
 }
+
+export type TrustedClientDetails={
+    className?:string,
+    client:string,
+    trusted:string,
+}
