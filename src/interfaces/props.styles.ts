@@ -49,3 +49,10 @@ export type TrustedClientDetails={
     client:string,
     trusted:string,
 }
+
+//Services Section Props
+export type ServicePicCardDetails={
+    path:string,
+    heading:string,
+    para:string
+}

@@ -17,16 +17,16 @@ const AboutSection = () => {
         />
         <Paragraph
           text={AboutSectionDetail.para1}
-          className="tracking-normal whitespace-pre-line text-[#56585E] font-DM Sans, sans-serif lg:text-[15.5px] md:text-[18px] sm:text-[18px] max-[640px]:text-[18px]"
+          className="tracking-normal lg:whitespace-pre-line sm:whitespace-pre-line md:whitespace-pre-line text-[#56585E] font-DM Sans, sans-serif lg:text-[15.5px] md:text-[18px] sm:text-[18px] max-[640px]:text-[15px]"
         />
         <Paragraph
           text={AboutSectionDetail.para2}
-          className="tracking-normal whitespace-pre-line text-[#56585E] font-DM Sans, sans-serif lg:text-[17px] md:text-[18px] sm:text-[18px] max-[640px]:text-[18px]"
+          className="tracking-normal lg:whitespace-pre-line sm:whitespace-pre-line md:whitespace-pre-line text-[#56585E] font-DM Sans, sans-serif lg:text-[17px] md:text-[18px] sm:text-[18px] max-[640px]:text-[15px]"
         />
         <div>
           {AboutSectionServiceDetail.map(({ para }: AboutSectionServies) => (
             <>
-              <div className="flex gap-2 items-end ">
+              <div className="flex items-end gap-2 ">
                 <div>
                   <Paragraph
                     text=". "
@@ -36,7 +36,7 @@ const AboutSection = () => {
                 <div>
                   <Paragraph
                     text={para}
-                    className="tracking-normal whitespace-pre-line text-[#56585E] font-DM Sans, sans-serif lg:text-[17px] md:text-[18px] sm:text-[18px] max-[640px]:text-[16px]"
+                    className="tracking-normal lg:whitespace-pre-line sm:whitespace-pre-line md:whitespace-pre-line text-[#56585E] font-DM Sans, sans-serif lg:text-[17px] md:text-[18px] sm:text-[18px] max-[640px]:text-[15px]"
                   />
                 </div>
               </div>
@@ -48,13 +48,13 @@ const AboutSection = () => {
         <div className="w-100 flex justify-center md:justify-center sm:justify-center max-[640px]:items-center ">
           <ContactButton
             name="Call Us "
-            className="bg-transparent border-black text-black border font-normal h-13 w-80 "
+            className="font-normal text-black bg-transparent border border-black h-13 w-80 "
           />
         </div>
       </div>
 
       {/* About section image */}
-      <div className="pb-14 lg:w-117 bg-[url('/images/tabletimage.png')] bg-cover lg:h-130 rounded-2xl md:w-170 sm:h-100 sm:w-130 max-[640px]:w-110 max-[640px]:h-100 flex items-end">
+      <div className="pb-14 lg:w-117 bg-[url('/images/tabletimage.png')] bg-cover lg:h-130 rounded-2xl md:w-170 sm:h-100 sm:w-130 max-[640px]:w-90 max-[640px]:h-100 flex items-end">
         <TrustedClientComp />
       </div>
     </div>
