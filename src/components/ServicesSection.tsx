@@ -1,12 +1,19 @@
 import Heading from "./Heading";
 import Paragraph from "./Paragraph";
-import { ServicesSectionPara, ServicePicCardInfo } from "../data";
+import {
+  ServicesSectionPara,
+  ServicePicCardInfo,
+  ServiceDetailCardData,
+  ServiceDetailCardData2,
+} from "../data";
 import ServicesPicCard from "./ServicesPicCard";
 import type { ServicePicCardDetails } from "../interfaces/props.styles";
+import type { ServicesData } from "../interfaces/props.styles";
+import ServiceDetailsCard from "./ServicesDetailsCard";
 
 const ServicesSection = () => {
   return (
-    <div className="flex flex-col pb-8 lg:gap-7 md:gap-7 sm:gap-6 items-center w-full bg-red-400 h-auto sm:mt-3 max-[640px]:mt-4 lg:pt-8 md:pt-8 sm:pt-7 max-[640px]:pt-7 ">
+    <div className="flex flex-col pb-8 lg:gap-7 md:gap-7 sm:gap-6 max-[640px]:gap-5 items-center w-full bg-red-400 h-auto sm:mt-3 max-[640px]:mt-4 lg:pt-8 md:pt-8 sm:pt-7 max-[640px]:pt-7 ">
       {/* heading and para div */}
       <div>
         <Heading
@@ -24,6 +31,18 @@ const ServicesSection = () => {
             <ServicesPicCard heading={heading} para={para} path={path} />
           )
         )}
+      </div>
+
+      {/* services detail cards */}
+      <div className="flex justify-center w-full lg:gap-3 md:gap-5 sm:gap-4 md:flex-col sm:flex-col lg:flex-row md:items-center sm:items-center max-[640px]:flex-col max-[640px]:gap-4 max-[640px]:items-center">
+        {ServiceDetailCardData.map(({ heading, para }: ServicesData) => (
+          <ServiceDetailsCard heading={heading} para={para} />
+        ))}
+      </div>
+      <div className="flex justify-center w-full lg:gap-3 md:gap-5 sm:gap-4 md:flex-col sm:flex-col lg:flex-row md:items-center sm:items-center max-[640px]:flex-col max-[640px]:gap-4 max-[640px]:items-center">
+        {ServiceDetailCardData2.map(({ heading, para }: ServicesData) => (
+          <ServiceDetailsCard heading={heading} para={para} />
+        ))}
       </div>
     </div>
   );

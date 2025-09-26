@@ -56,3 +56,10 @@ export type ServicePicCardDetails={
     heading:string,
     para:string
 }
+
+//contact section
+export type TextFieldDetail={
+    label:string
+    placeholder:string
+    classname?:string
+}
