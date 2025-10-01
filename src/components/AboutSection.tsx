@@ -17,11 +17,11 @@ const AboutSection = () => {
         />
         <Paragraph
           text={AboutSectionDetail.para1}
-          className="tracking-normal lg:whitespace-pre-line sm:whitespace-pre-line md:whitespace-pre-line text-[#56585E] font-DM Sans, sans-serif lg:text-[15.5px] md:text-[18px] sm:text-[18px] max-[640px]:text-[15px]"
+          className="tracking-normal max-[640px]:text-justify lg:whitespace-pre-line sm:whitespace-pre-line md:whitespace-pre-line text-[#56585E] font-DM Sans, sans-serif lg:text-[15.5px] md:text-[18px] sm:text-[18px] max-[640px]:text-[15px]"
         />
         <Paragraph
           text={AboutSectionDetail.para2}
-          className="tracking-normal lg:whitespace-pre-line sm:whitespace-pre-line md:whitespace-pre-line text-[#56585E] font-DM Sans, sans-serif lg:text-[17px] md:text-[18px] sm:text-[18px] max-[640px]:text-[15px]"
+          className="tracking-normal max-[640px]:text-justify lg:whitespace-pre-line sm:whitespace-pre-line md:whitespace-pre-line text-[#56585E] font-DM Sans, sans-serif lg:text-[17px] md:text-[18px] sm:text-[18px] max-[640px]:text-[15px]"
         />
         <div>
           {AboutSectionServiceDetail.map(({ para }: AboutSectionServies) => (
@@ -36,7 +36,7 @@ const AboutSection = () => {
                 <div>
                   <Paragraph
                     text={para}
-                    className="tracking-normal lg:whitespace-pre-line sm:whitespace-pre-line md:whitespace-pre-line text-[#56585E] font-DM Sans, sans-serif lg:text-[17px] md:text-[18px] sm:text-[18px] max-[640px]:text-[15px]"
+                    className="tracking-normal max-[640px]:text-justify lg:whitespace-pre-line sm:whitespace-pre-line md:whitespace-pre-line text-[#56585E] font-DM Sans, sans-serif lg:text-[17px] md:text-[18px] sm:text-[18px] max-[640px]:text-[15px]"
                   />
                 </div>
               </div>
@@ -47,7 +47,7 @@ const AboutSection = () => {
         {/* button */}
         <div className="w-100 flex justify-center md:justify-center sm:justify-center max-[640px]:items-center ">
           <ContactButton
-            name="Call Us "
+            name="Call Us +1 (844) 532-5227 "
             className="font-normal text-black bg-transparent border border-black h-13 w-80 "
           />
         </div>

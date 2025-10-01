@@ -23,7 +23,7 @@ const RatingSection = () => {
           alt="jhon"
         />
         <Paragraph
-          text="Jhon Wick"
+          text="Alex Hales"
           className="text-white font-semibold text-[17px] pb-10"
         />
       </div>

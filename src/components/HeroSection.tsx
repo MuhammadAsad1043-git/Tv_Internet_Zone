@@ -18,7 +18,7 @@ const HeroSection = () => {
         />
 
         {/* Div 2 */}
-        <div className="flex flex-col gap-3 justify-center items-center">
+        <div className="flex flex-col items-center justify-center gap-3">
           <Heading
             className="text-white font-bold lg:text-[65px] text-center font-DM Sans, sans-serif wrap-break-word md:text-[52px] sm:text-[42px] max-[640px]:text-[38px] whitespace-pre-line"
             text={HeroHeading2.text}
@@ -29,11 +29,14 @@ const HeroSection = () => {
           />
 
           {/* button */}
-          <ContactButton className="border-white border font-medium h-13 pr-6 pl-6 text-white bg-transparent" />
+          <ContactButton
+            name="+1 (844) 532-5227"
+            className="pl-6 pr-6 font-medium text-white bg-transparent border border-white h-13"
+          />
         </div>
 
         {/* Service cards */}
-        <div className="flex gap-6 justify-center flex-col lg:flex-row items-center">
+        <div className="flex flex-col items-center justify-center gap-6 lg:flex-row">
           {ServiceCardData.map(({ heading, para }: ServicesData) => (
             <ServiceComponet heading={heading} para={para} />
           ))}

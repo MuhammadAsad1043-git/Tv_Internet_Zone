@@ -62,4 +62,11 @@ export type TextFieldDetail={
     label:string
     placeholder:string
     classname?:string
+    labelclassname?:string
+}
+
+//SideBar
+export type MobileSidebarProps= {
+  open: boolean;
+  onClose: () => void;
 }

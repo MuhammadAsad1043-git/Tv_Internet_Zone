@@ -1,5 +1,6 @@
 import AboutSection from "../components/AboutSection";
 import ContactSection from "../components/ContactSection";
+import FooterSection from "../components/FooterSection";
 import HeroSection from "../components/HeroSection";
 import NavBar from "../components/NavBar";
 import RatingSection from "../components/RatingSection";
@@ -14,6 +15,7 @@ const Home = () => {
       <ServicesSection />
       <RatingSection />
       <ContactSection />
+      <FooterSection />
     </>
   );
 };
